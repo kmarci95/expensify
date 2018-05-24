@@ -11,12 +11,6 @@ import { addExpense } from "./actions/expenses";
 import { setTextFilter } from "./actions/filters";
 
 const store = congfigureStore();
-const state = store.getState();
-
-store.dispatch(addExpense({description: 'Water bill', amount: 4500}));
-store.dispatch(addExpense({description: 'Gas bill', createdAt: 10000}));
-store.dispatch(addExpense({description: 'Rent', amount: 109500}));
-
 
 const jsx = (
   <Provider store={store}>
