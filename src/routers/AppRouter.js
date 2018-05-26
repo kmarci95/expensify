@@ -13,11 +13,11 @@ const AppRouter = (props) => {
       <div>
         <Header/>
         <Switch>
-          <Route path="/edit/:id" exact component={EditExpensePage}/>
-          <Route path="/create" exact component={AddExpensePage}/>
-          <Route path="/help" exact component={HelpPage}/>
-          <Route path="/" exact component={ExpenseDashboardPage}/>
-          <Route component={NotFoundPage}/>
+          <Route path="/" component={ExpenseDashboardPage} exact={true} />
+          <Route path="/create" component={AddExpensePage} />
+          <Route path="/edit/:id" component={EditExpensePage} />
+          <Route path="/help" component={HelpPage} />
+          <Route component={NotFoundPage} />
         </Switch>
       </div>
     </BrowserRouter>
