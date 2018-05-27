@@ -22,7 +22,6 @@ export class EditExpensePage extends React.Component {
       </div>
     )
   }
-
 }
 
 const mapStateToProps = (state, props) => {
